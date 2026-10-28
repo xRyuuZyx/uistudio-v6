@@ -1,0 +1,60 @@
+prefix: "<gray>[<gold>UI</gold>]</gray> "
+click-cooldown-ms: 150
+timezone: "Asia/Makassar"      # untuk %time% dan %date%
+
+# ============ RESOURCE PACK ============
+# UIStudio membuat pack sendiri dari folder images/, icons/, models/ lalu mengirimnya ke pemain.
+pack:
+  # SELF_HOST = server membuka port HTTP sendiri (butuh port terbuka)
+  # URL       = kamu upload pack ke tempat lain (GitHub dll), isi 'url' di bawah
+  # NEXO      = salin ke plugins/Nexo/pack/external_packs (Nexo yang mengirim)
+  # NONE      = tidak mengirim apa-apa (kamu atur sendiri)
+  delivery: SELF_HOST
+  format: 75                  # pack_format untuk Minecraft 1.21.11
+  hide-bossbar-sprites: true  # sembunyikan bar boss bawaan (berlaku untuk SEMUA boss bar)
+  hide-vanilla-hud: true      # sembunyikan ikon hati / lapar / armor / napas bawaan
+  hide-vanilla-xp: false      # sembunyikan juga bar XP bawaan
+  required: false
+  join-delay-ticks: 40        # jeda sebelum pack dikirim setelah pemain join
+  retry-attempts: 3           # kirim ulang otomatis kalau unduhan gagal
+  prompt: "<gold>UIStudio</gold> membutuhkan resource pack"
+  self-host:
+    public-host: "127.0.0.1"  # GANTI ke IP/domain server yang bisa diakses pemain
+    port: 8083                # port TCP yang terbuka di hosting
+  url: ""                     # dipakai kalau delivery: URL
+  sha1: ""                    # opsional; kosong = dihitung dari file lokal
+
+# Lebar setengah layar bawaan (piksel GUI) untuk pemain yang belum atur sendiri. Pemain mengatur dengan /uistudio calibrate.
+screen:
+  half-width: 320
+  aspect: 1.7778              # lebar/tinggi layar (16:9). Dipakai untuk menghitung berapa baris boss bar yang muat
+
+# ============ HUD ============
+hud:
+  interval-ticks: 5
+  # Sumber angka uang bank untuk %bank%. Isi dengan placeholder PlaceholderAPI dari plugin bank-mu,
+  # contoh: "%namaplugin_bank%". Kalau belum punya, biarkan "0".
+  thousands-separator: "."    # 10.731 (isi "," untuk 10,731)
+  uppercase-names: true       # nama job / gang ditampilkan HURUF BESAR
+  # Format teks di HUD. %job_name% %job_rank% %gang_name% %gang_rank%
+  job-format: "<white>%job_name% <gray>- <aqua>%job_rank%"
+  job-none: "<white>Civilian <gray>- <gray>Freelancer"
+  gang-format: "<white>%gang_name% <gray>- <gold>%gang_rank%"
+  gang-none: "<white>No Gang <gray>- <gray>Unaffiliated"
+  bank-placeholder: "0"
+  auto: [fivem]               # HUD yang tampil untuk pemain baru (pilihan pemain disimpan sendiri)
+
+messages:
+  no-screen: "<red>Layar <white>%screen%</white> tidak ditemukan."
+  no-permission: "<red>Kamu tidak punya izin membuka ini."
+
+# ============ PANGKAT BAWAAN ============
+# Pangkat khusus per orang diatur dengan /pangkat (menimpa pangkat bawaan ini).
+ranks:
+  job-default: "Pekerja"
+  gang:
+    leader: "Godfather"
+    member: "Soldier"
+  family:
+    leader: "Kepala Keluarga"
+    member: "Anggota"

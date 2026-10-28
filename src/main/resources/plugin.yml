@@ -1,0 +1,21 @@
+name: UIStudio
+version: '${project.version}'
+main: id.roleplay.uistudio.UIStudio
+api-version: '1.21'
+softdepend: [PlaceholderAPI, Vault, Nexo, RoleplayJobs, RoleplayHUD, voicechat]
+description: Studio UI - HUD, layar GUI, animasi, resource pack otomatis, editor in-game
+
+commands:
+  uistudio:
+    description: UIStudio
+    aliases: [uis]
+    usage: /uistudio <open|list|reload|editor|hud|pack|preview>
+
+  pangkat:
+    description: Atur pangkat gang / pekerjaan
+    aliases: [rank]
+    usage: /pangkat <gang|job|hapus> ...
+
+permissions:
+  uistudio.admin:
+    default: op

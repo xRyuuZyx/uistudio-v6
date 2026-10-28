@@ -1,0 +1,56 @@
+# HUD ala FiveM.
+# anchor: right -> x dihitung dari TEPI KANAN layar (negatif = ke dalam). anchor: left -> dari tepi kiri.
+# Tanpa anchor -> x dihitung dari tengah layar.
+# align: right -> x dianggap tepi KANAN elemen (bukan kiri).
+# priority: kalau layar kecil dan boss bar tidak muat, baris dengan angka terkecil dibuang duluan (bawaan 100).
+# Lebar layar tiap pemain diatur dengan /uistudio calibrate.
+# %job_line% = "NAMA JOB - Pangkat", %gang_line% = "NAMA GANG - Pangkat" (format di config.yml).
+span: 240
+rows:
+  # ================= POJOK KANAN ATAS =================
+  # Logo (jarak 10 px dari kanan, 8 px dari atas). Ganti dengan /uistudio logo
+  - type: bossbar
+    priority: 100
+    layers:
+      - { type: image, id: logo, anchor: right, x: -10, align: right }
+  # Baris kosong: memberi tempat untuk logo supaya tidak menimpa teks di bawahnya
+  - type: bossbar
+    priority: 100
+    layers: []
+  - type: bossbar
+    priority: 10
+    layers:
+      - { type: text, text: "<white>%date% - %time%", anchor: right, x: -12, align: right }
+  - type: bossbar
+    priority: 20
+    layers:
+      - { type: text, text: "<white>%online% Players", anchor: right, x: -12, align: right }
+  - type: bossbar
+    priority: 100
+    layers:
+      - { type: text, text: "<white>$%money%", anchor: right, x: -12, align: right }
+  - type: bossbar
+    priority: 90
+    layers:
+      - { type: text, text: "<red>$%bank%", anchor: right, x: -12, align: right }
+  - type: bossbar
+    priority: 80
+    layers:
+      - { type: image, id: ic_job, anchor: right, x: -10, align: right }
+      - { type: text, text: "%job_line%", anchor: right, x: -21, align: right }
+  - type: bossbar
+    priority: 70
+    layers:
+      - { type: image, id: ic_gang, anchor: right, x: -10, align: right }
+      - { type: text, text: "%gang_line%", anchor: right, x: -21, align: right }
+
+  # ================= POJOK KIRI BAWAH (action bar) =================
+  # Jarak 10 px dari kiri dan dari bawah layar.
+  - type: actionbar
+    layers:
+      - { type: meter, image: hpbar, steps: 20, anchor: left, x: 10, value: "%health%", max: 20, color: "#ff3b3b", bg: "#3a1a1a" }
+      - { type: meter, image: arbar, steps: 20, anchor: left, x: 10, value: "%armor%", max: 20, color: "#35d0ff", bg: "#102a33" }
+      - { type: meter, image: ring, steps: 20, anchor: left, x: 10, value: "%food%", max: 20, color: "#ffb84d", bg: "#33301f", icon: ico_food }
+      - { type: meter, image: ring, steps: 20, anchor: left, x: 36, value: "%air%", max: 100, color: "#3da5ff", bg: "#1c2a3a", icon: ico_water }
+      - { type: meter, image: ring, steps: 20, anchor: left, x: 62, value: "%saturation%", max: 20, color: "#ffd53c", bg: "#33301f", icon: ico_run }
+      - { type: meter, image: ring, steps: 20, anchor: left, x: 88, value: "%voice_value%", max: 100, color: "%voice_color%", bg: "#2a2a30", icon: "%voice_icon%" }

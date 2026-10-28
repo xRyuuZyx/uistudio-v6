@@ -1,0 +1,12 @@
+# Dipakai oleh /uistudio calibrate: penanda ungu di tepi kiri dan kanan layar.
+span: 240
+rows:
+  - type: bossbar
+    priority: 1000
+    layers:
+      - { type: image, id: edge_mark, anchor: left, x: 1 }
+      - { type: image, id: edge_mark, anchor: right, x: -1, align: right }
+  - type: actionbar
+    layers:
+      - { type: image, id: edge_mark, anchor: left, x: 1 }
+      - { type: image, id: edge_mark, anchor: right, x: -1, align: right }

@@ -1,0 +1,393 @@
+# Ukuran tampilan bawaan. dy = jarak turun dari garis dasar teks (px). 'force' = ditimpa saat seed-version naik.
+# 'force-ascent' = hanya ascent yang ditimpa.
+seed-version: 3
+images:
+  arbar_1:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_10:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_11:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_12:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_13:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_14:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_15:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_16:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_17:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_18:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_19:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_2:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_20:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_3:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_4:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_5:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_6:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_7:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_8:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_9:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  arbar_bg:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  edge_mark:
+    height: 8
+    ascent: 7
+  hpbar_1:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_10:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_11:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_12:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_13:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_14:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_15:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_16:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_17:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_18:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_19:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_2:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_20:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_3:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_4:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_5:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_6:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_7:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_8:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_9:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  hpbar_bg:
+    height: 14
+    ascent: 14
+    dy: 13
+    force: true
+  ico_food:
+    height: 12
+    ascent: 8
+    dy: 37
+    force: true
+  ico_mic:
+    height: 12
+    ascent: 8
+    dy: 37
+    force: true
+  ico_mic_off:
+    height: 12
+    ascent: 8
+    dy: 37
+    force: true
+  ico_run:
+    height: 12
+    ascent: 8
+    dy: 37
+    force: true
+  ico_water:
+    height: 12
+    ascent: 8
+    dy: 37
+    force: true
+  logo:
+    height: 28
+    ascent: 2
+    force-ascent: true
+  num_0:
+    height: 14
+    ascent: 11
+  num_1:
+    height: 14
+    ascent: 11
+  num_2:
+    height: 14
+    ascent: 11
+  num_3:
+    height: 14
+    ascent: 11
+  num_4:
+    height: 14
+    ascent: 11
+  num_5:
+    height: 14
+    ascent: 11
+  num_6:
+    height: 14
+    ascent: 11
+  num_7:
+    height: 14
+    ascent: 11
+  num_8:
+    height: 14
+    ascent: 11
+  num_9:
+    height: 14
+    ascent: 11
+  num_comma:
+    height: 14
+    ascent: 11
+  num_dollar:
+    height: 14
+    ascent: 11
+  num_dot:
+    height: 14
+    ascent: 11
+  num_minus:
+    height: 14
+    ascent: 11
+  ring_1:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_10:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_11:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_12:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_13:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_14:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_15:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_16:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_17:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_18:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_19:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_2:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_20:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_3:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_4:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_5:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_6:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_7:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_8:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_9:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
+  ring_bg:
+    height: 24
+    ascent: 14
+    dy: 31
+    force: true
